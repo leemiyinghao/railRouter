@@ -1,0 +1,17 @@
+name: railRouter
+version: 0.0.1
+main: tw.longcat.railRouter.main
+
+commands:
+   nyaFurnace:
+      description: Reload command
+      usage: '/nyaFurnace reload'
+
+permission:
+   nyaFurnace.*:
+      description: All access permission
+      children:
+         nyaFurnace.reload: true
+   nyaFurnace.reload:
+      description: Permission to reload plugin
+      default: op
